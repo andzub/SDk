@@ -1,0 +1,35 @@
+{
+  "name": "sdk/http-client",
+  "description": "SDK",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Andrii"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Api\\Client\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=8.0",
+    "php-http/client-common": "^2.3",
+    "php-http/discovery": "^1.12",
+    "psr/http-client": "^1.0",
+    "psr/http-client-implementation": "^1.0",
+    "psr/http-factory": "^1.0",
+    "symfony/http-client": "^6.2"
+  },
+  "require-dev": {
+    "php-http/curl-client": "^2.1",
+    "laminas/laminas-diactoros": "^2.4",
+    "symfony/var-dumper": "^5.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  }
+}
